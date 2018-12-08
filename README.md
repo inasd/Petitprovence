@@ -1,5 +1,4 @@
 # petitprovence
-For my grandmother
 
 Hello, nice to meet you. I'm korean and high school student.
 
