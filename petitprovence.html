@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>쁘띠프로방스</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body {
+	font-family: "FontAwesome", sans-serif;
+}
+
+h1 {font-style: "bold"}
+
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+
+.w3-third img:hover{opacity: 1}
+
+p.header {
+	font-size: 40px;
+}
+
+p.intro {
+	font-size: 20px;
+}
+
+hr.styleAdd {
+  border-top: 1px dashed grey;
+}
+
+</style>
+</head>
+
+<body class="w3-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+	<br> <br>
+	<img src="images/pp01.jpg" style="width:40%" alt="petitprovence"> 
+    <h1 class="w3-padding-8 w3-center">쁘띠프로방스</h1>
+    <hr class="styleAdd">
+    <h6 class="w3-padding-8 w3-center">[곤지암리조트 펜션]</h6>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-padding-15 w3-button fa fa-home">펜션소개</a> 
+    <a href="#room" onclick="w3_close()" class="w3-bar-item w3-padding-15 w3-button fa fa-photo">펜션안내</a> 
+    <a href="#reservation" onclick="w3_close()" class="w3-bar-item w3-padding-15 w3-button fa fa-phone">예약문의</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-padding-15 w3-button fa fa-car">오시는길</a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-padding-24 w3-button w3-padding w3-hide-large fa fa-close">닫기</a>
+    <br><br>
+    <img src="images/pp02.jpg" style="width:30%" alt="petitprovence"> 
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding;">쁘띠프로방스</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-sand w3-center w3-text-black w3-padding-16" id="about">
+
+    <p style="font-size:55px"><b>쁘띠프로방스</b>에 어서오세요</p>
+    <h4 class="w3-padding-8 w3-margin-bottom">[<b>곤지암리조트 화담숲이 가장 가까운 펜션</b>]</h4>
+
+    <hr class="styleAdd w3-content" style="max-width:900px">
+
+      <!-- This is a main image -->
+      <img src="images/main/main1.png" alt="MainImage" class="w3-image w3-padding-16" style="width:80%;height:45%;">
+
+    <div class="w3-content w3-justify w3-padding-32" style="max-width:900px">
+       <p class="w3-content w3-padding-small w3-left" style="font-size:25px"><strong>펜션소개: </strong></p>
+     <div class="w3-content w3-justify">
+        <p class="intro">곤지암 쁘띠프로방스는 주변의 많은 풀들이 정원을 만든듯한 아름다운 전원 풍의 펜션입니다.</p>
+    	<p class="intro"><b>곤지암리조트 옆길 도보 3~5분 거리</b>로, 원하실 때 <b>바로 스키</b>를 즐기실 수 있는 가까운 거리입니다.</p>
+    	<p class="intro">단지 곤지암리조트와 가까울 뿐만 아니라 잡지 ‘행복이 가득한 집’에 소개된 적이 있습니다.
+    	<p class="intro">직접 꾸민 벽화, 퀼트, 컵과 그릇 등의 이쁘고 아기자기한 소품들과 야생화를 보며 아름다운 추억을 만드실 수 있습니다.</p>
+    	<p class="intro">저희는 방문하시는 손님께 최고의 추억을 만들어 드리기 위해 하루 한 팀의 예약만 받고 있습니다.</p>
+    	<p class="intro">가족이나 친구, 연인, 누구든지 이 펜션에서 아름다운 추억을 만드실 수 있습니다.</p>
+    	<p class="intro">바깥세상과 독립된 이곳에서 숙박과 스키를 즐기며 편안한 휴가를 보내세요.</p>
+    	<p class="intro">[since 2011] 들꽃풀꽃이라는 이름으로 시작하여 지금의 쁘띠프로방스라는 이름을 가지게 되었습니다.</p>
+    	<p class="intro"><b>예약방법</b>: 010-9882-9089 연락문의 혹은 아래의 예약문의란 확인</p>
+     </div>
+
+        <br><hr class="styleAdd w3-content w3-padding-16" style="max-width:900px">
+    
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">    
+	      <h3>가까운 거리</h3>
+	      <img src="images/main/feature5.jpg" alt="John" style="width:100%">      
+	      <p class="w3-opacity">서울에서 20Km</p>
+	      <p>서울에서 자가용으로 1시간 이내 거리에 있어 부담없이 하루의 휴식을 즐길 수 있는 곳입니다.</p>
+	      <p><button class="w3-button w3-text-white w3-blue-grey w3-block" onclick="location.href='#contact';">오시는 길</button></p>
+	    </div>
+	    <div class="w3-half w3-margin-bottom">
+	      <h3>쾌적한 환경</h3>
+	      <img src="images/main/main3.jpg" alt="Jane" style="width:100%">     
+	      <p class="w3-opacity">자연속의 독채 공간</p>
+	      <p>큰 방과 작은 방, 그리고 큰 테라스에서 바베큐가 가능하며 주변에는 아름다운 꽃이 많습니다.</p>
+	      <p><button class="w3-button w3-text-white w3-blue-grey w3-block" onclick="location.href='#';">쁘띠프로방스</button></p>
+	    </div>
+	  </div>
+	  <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+	      <h3>아름다운 경치</h3>
+	      <img src="images/main/feature1.jpg" alt="Mike" style="width:100%">     
+	      <p class="w3-opacity">휴양림, 수목원</p>
+	      <p>걸어서 5분, 거리로 1km이내에 화담숲 수목원과 용인자연휴양림이 있어 가족산책이 가능합니다.</p>
+	      <p><button class="w3-button w3-text-white w3-blue-grey w3-block" onclick="location.href='http://www.hwadamsup.com';">화담숲 수목원 가기</button></p>
+	    </div>
+	    <div class="w3-half w3-margin-bottom">
+	      <h3>다양한 관광지</h3>
+	      <img src="images/main/feature4.jpg" alt="Dan" style="width:100%">    
+	      <p class="w3-opacity">스키장(500m), 골프장(1km), 맛집</p>
+	      <p>걸어서 3분 이내 거리에 있는 곤지암 리조트엔 즐길 거리가 많이 있습니다.</p>
+	      <p><button class="w3-button w3-text-white w3-blue-grey w3-block" onclick="location.href='http://www.konjiamresort.co.kr';">곤지암리조트 구경가기</button></p>
+	    </div>
+	    
+  	   </div>
+  	</div>
+ 
+  <!-- Room section -->
+  <div class="w3-container w3-white w3-center w3-text-black w3-padding-64" id="room">
+	<div class="w3-content w3-justify" style="max-width:632px">
+	    <h2 class="w3-center w3-padding-large" style="font-size:45px"><b>펜션안내</b></h2>
+	    <hr class="styleAdd w3-content w3-padding-16" style="max-width:900px">
+	    <div class="w3-container" style="margin-top:32px" id="room1">
+		    <h5>외부전경</h5>
+		    <div class="w3-display-container mySlides">
+		      <img src="images/external/external01.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <div class="w3-display-bottomleft w3-container w3-black">
+		        <p>입구 전경</p>
+		      </div>
+		    </div>
+		    <div class="w3-display-container mySlides">
+		      <img src="images/external/external02.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <div class="w3-display-bottomleft w3-container w3-black">
+		        <p>펜션 정면</p>
+		      </div>
+		    </div>
+		    <div class="w3-display-container mySlides">
+		      <img src="images/external/external03.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <div class="w3-display-bottomleft w3-container w3-black">
+		        <p>테라스 입구</p>
+		      </div>
+		    </div>
+		    <div class="w3-display-container mySlides">
+		      <img src="images/external/external04.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <div class="w3-display-bottomleft w3-container w3-black">
+		        <p>바베큐 장소</p>
+		      </div>
+		    </div>
+		    <div class="w3-display-container mySlides">
+		      <img src="images/external/external05.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <div class="w3-display-bottomleft w3-container w3-black">
+		        <p>스키장 전경</p>
+		      </div>
+		    </div>
+		    <div class="w3-display-container mySlides">
+		      <img src="images/external/external06.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <div class="w3-display-bottomleft w3-container w3-black">
+		        <p>아름다운 주변경치</p>
+		      </div>
+		    </div>
+		</div>
+		<div class="w3-row-padding w3-section">
+		    <div class="w3-col s2">
+		      <img class="demo w3-opacity w3-hover-opacity-off" src="images/external/external01.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
+		    </div>
+		    <div class="w3-col s2">
+		      <img class="demo w3-opacity w3-hover-opacity-off" src="images/external/external02.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Dining room">
+		    </div>
+		    <div class="w3-col s2">
+		      <img class="demo w3-opacity w3-hover-opacity-off" src="images/external/external03.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Bedroom">
+		    </div>
+		    <div class="w3-col s2">
+		      <img class="demo w3-opacity w3-hover-opacity-off" src="images/external/external04.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Second Living Room">
+		    </div>
+		    <div class="w3-col s2">
+		      <img class="demo w3-opacity w3-hover-opacity-off" src="images/external/external05.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)" title="Living room">
+		    </div>
+		    <div class="w3-col s2">
+		      <img class="demo w3-opacity w3-hover-opacity-off" src="images/external/external06.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)" title="Dining room">
+		    </div> 
+		  </div>
+		<div class="w3-container" id="room2">
+		    <h5>객실안내</h5>
+		    <div class="w3-display-container ymySlides">
+		    <img src="images/internal/internal01.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <div class="w3-display-bottomleft w3-container w3-black">
+		        <p>본채 입구</p>
+		      </div>
+		    </div>
+		    <div class="w3-display-container ymySlides">
+		    <img src="images/internal/internal02.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <div class="w3-display-bottomleft w3-container w3-black">
+		        <p>외부 경치</p>
+		      </div>
+		    </div>
+		    <div class="w3-display-container ymySlides">
+		    <img src="images/internal/internal03.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <div class="w3-display-bottomleft w3-container w3-black">
+		        <p>본채 내부</p>
+		      </div>
+		    </div>
+		    <div class="w3-display-container ymySlides">
+		    <img src="images/internal/internal04.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <div class="w3-display-bottomleft w3-container w3-black">
+		        <p>별채 입구</p>
+		      </div>
+		    </div>
+		    <div class="w3-display-container ymySlides">
+		    <img src="images/internal/internal05.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <div class="w3-display-bottomleft w3-container w3-black">
+		        <p>별채 내부</p>
+		      </div>
+		    </div>
+		    <div class="w3-display-container ymySlides">
+		    <img src="images/internal/internal06.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <div class="w3-display-bottomleft w3-container w3-black">
+		        <p>내부 장식</p>
+		      </div>
+		    </div>
+		  </div>
+		<div class="w3-row-padding w3-section" style="margin-bottom:32px">
+	    <div class="w3-col s2">
+	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="images/internal/internal01.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(1)" title="Living room">
+	    </div>
+	    <div class="w3-col s2">
+	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="images/internal/internal02.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(2)" title="Dining room">
+	    </div>
+	    <div class="w3-col s2">
+	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="images/internal/internal03.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(3)" title="Bedroom">
+	    </div>
+	    <div class="w3-col s2">
+	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="images/internal/internal04.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(4)" title="Second Living Room">
+	    </div>
+	    <div class="w3-col s2">
+	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="images/internal/internal05.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(5)" title="Second Living Room">
+	    </div>
+	    <div class="w3-col s2">
+	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="images/internal/internal06.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(6)" title="Second Living Room">
+	    </div>
+	  </div>
+    </div>
+  </div>
+  	  
+  <!-- Reservation section -->
+  <div class="w3-container w3-sand w3-padding-64 w3-padding-large" id="reservation">
+    <div class="w3-content" style="max-width:600px">
+      <h2 class="w3-center w3-tag w3-round w3-dark-grey w3-text-white w3-padding-large" style="font-size:40px"><b>예약문의</b></h2>
+      <div class="w3-row-padding" style="margin-top:32px">
+	      <p><i class="fa fa-photo fa-fw w3-large w3-margin-right"></i> 사진 및 주의사항, 객실 가격 등을 확인</p>
+		  <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> 예약문의 : 010-9882-9089</p>
+	      <p><i class="fa fa-credit-card fa-fw w3-large w3-margin-right"></i> 계좌입금 : 농협 221033-51-088710 (정선기)</p>
+	      <p><i class="fa fa-user fa-fw w3-large w3-margin-right"></i> 예약날짜에 방문</p>
+      </div>
+      <br>
+      <div class="w3-row-padding" style="margin:0 -32px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-center">
+            <li class="w3-grey w3-round w3-large w3-padding-8 w3-text-white">방2개 (11평과 6평)</li>
+            <li class="w3-padding-8"><span class="w3-tag w3-round w3-black">비수기</span> <span class="w3-tag w3-round w3-black">평일</span> : 16만원</li>
+            <li class="w3-padding-8"><span class="w3-tag w3-round w3-black">비수기</span> <span class="w3-tag w3-round w3-teal">휴일</span> : 20만원</li>
+            <li class="w3-padding-8"><span class="w3-tag w3-round w3-teal">성수기</span> <span class="w3-tag w3-round w3-black">평일</span> : 16만원</li>
+            <li class="w3-padding-8"><span class="w3-tag w3-round w3-teal">성수기</span> <span class="w3-tag w3-round w3-teal">휴일</span> : 28만원</li>
+            <li class="w3-padding-8">
+              <span class="w3-opacity">성수기 기준</span><br>
+              <span class="w3-opacity">하계시즌: 7월 중순경~ 8월말</span><br>
+              <span class="w3-opacity">동계시즌: 12월 1일 ~ 3월 10일</span>
+            </li>
+            <li class=" w3-padding-8">
+              <button class="w3-button w3-white w3-padding-8 w3-text-grey">바베큐 장비 대여 2만원</button>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="w3-half">
+          <ul class="w3-ul w3-center">
+            <li class="w3-grey w3-round w3-large w3-padding-8 w3-text-white">방1개 (11평)</li>
+            <li class="w3-padding-8"><span class="w3-tag w3-round w3-black">비수기</span> <span class="w3-tag w3-round w3-black">평일</span> : 10만원</li>
+            <li class="w3-padding-8"><span class="w3-tag w3-round w3-black">비수기</span> <span class="w3-tag w3-round w3-teal">휴일</span> : 14만원</li>
+            <li class="w3-padding-8"><span class="w3-tag w3-round w3-teal">성수기</span> <span class="w3-tag w3-round w3-black">평일</span> : 10만원</li>
+            <li class="w3-padding-8"><span class="w3-tag w3-round w3-teal">성수기</span> <span class="w3-tag w3-round w3-teal">휴일</span> : 18만원</li>
+            <li class="w3-padding-8">
+              <span class="w3-opacity">성수기 기준</span><br>
+              <span class="w3-opacity">하계시즌: 7월 중순경~ 8월말</span><br>
+              <span class="w3-opacity">동계시즌: 12월 1일 ~ 3월 10일</span>
+            </li>
+            <li class=" w3-padding-8">
+              <button class="w3-button w3-white w3-padding-8 w3-text-grey">바베큐 장비 대여 2만원</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">주의사항</h4>
+	  <p><i class="fa fa-warning fa-fw w3-large w3-margin-right"></i> 시설물 파손 및 분실 책임은 고객님에게 있습니다.</p>
+	  <p><i class="fa fa-warning fa-fw w3-large w3-margin-right"></i> 바베큐 가능합니다. (예약 시 미리 말씀해 주세요)</p>
+	  <p><i class="fa fa-warning fa-fw w3-large w3-margin-right"></i> 입실 시간을 확인해 주세요. (입실시간 14시)</p>
+	  <p><i class="fa fa-warning fa-fw w3-large w3-margin-right"></i> 퇴실 시간을 준수해 주세요. (퇴실시간 12시)</p>
+    </div>
+  </div>
+  
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-64 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-content w3-round w3-center w3-grey w3-text-white" style="font-size:30px; width:200px; height:50px;"><b>오시는 길</b></h4>
+      <div class="w3-row-padding" style="margin-top:32px">
+	    <div class="w3-full">
+	      <p><i class="fa fa-map-marker fa-fw w3-large w3-margin-right"></i> 경기도 광주시 도척면 도웅1리 398-1</p>
+	      <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> 010-9882-9089</p>
+	      <p><i class="fa fa-car fa-fw w3-large w3-margin-right"> </i> 중부고속도로 이용 -> 하남 IC 제1중부고속도로 이용 곤지암 인터체인지 -> 이천방향으로 우회전 -> 신대사거리에서 우회전 도척, 용인방면 -> 곤지암리조트 방면으로 3km 직진 후 -> 어시스트코리아 앞 도웅리 방면(1시방향) 오른쪽으로 직진 -> 장비좋은집 지나 좌회전(11시 방향) 후 리조트 후문쪽으로 쭉 올라오시면 오른쪽에 쁘띠프로방스가 보입니다.</p>
+          <p><i class="fa fa-bus fa-fw w3-large w3-margin-right"> </i> 곤지암터미널에서 도웅리 가는 버스를 타시거나 리조트 셔틀버스를 타시고 후문으로 오셔서 연락주셔도 됩니다..</p>
+          
+	      <br>
+
+	    </div>
+	      <div class="w3-full w3-center">
+
+	      	<br>
+
+	      <!-- Add Google Maps -->
+	      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
+
+	      	<p style="font-size:12px">- 확대하시면 자세한 위치가 나옵니다. <br>- 만약 구글 지도가 불가능하시면 위의 주소로 찾아와주세요.</p>
+     
+	    </div>
+	  </div>
+    </div>
+  </div>
+  
+  <div class="w3-dark-grey w3-center w3-padding-24">
+    Powered by <a href="http://www.prefity.com/petitprovence" title="W3.CSS" target="_blank" class="w3-hover-opacity">Petit Provence</a>
+  </div>
+  
+</div>
+  
+<script>
+
+function myMap()
+{
+  myCenter=new google.maps.LatLng(37.338452, 127.300725); 
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+function changeImg(idx) {
+	
+	var img01 = document.getElementById("fimg01");
+	var img02 = document.getElementById("fimg02");
+	var img03 = document.getElementById("fimg03");
+	var img04 = document.getElementById("fimg04");
+	var img05 = document.getElementById("fimg05");
+	var img06 = document.getElementById("fimg06");
+	var img07 = document.getElementById("fimg07");
+	var img08 = document.getElementById("fimg08");
+	var img09 = document.getElementById("fimg09");
+	// var img10 = document.getElementById("fimg10");
+	// var img11 = document.getElementById("fimg11");
+	// var img12 = document.getElementById("fimg12");
+	
+	var link1 = document.getElementById("link1");
+	var link2 = document.getElementById("link2");
+	var link3 = document.getElementById("link3");
+	var link4 = document.getElementById("link4");
+	
+	if (idx == 1) {
+		img01.src = "images/ext01.jpg"
+			img02.src = "images/ext02.jpg"
+			img03.src = "images/ext03.jpg"
+			img04.src = "images/ext04.jpg"
+			img05.src = "images/ext05.jpg"
+			img06.src = "images/ext06.jpg"
+			img07.src = "images/ext07.jpg"
+			img08.src = "images/ext08.jpg"
+			img09.src = "images/ext09.jpg"
+		//	img10.src = "images/ext10.jpg"
+		//	img11.src = "images/ext11.jpg"
+		//	img12.src = "images/ext12.jpg"	
+				link1.className = "w3-bar-item w3-black w3-button"
+					link2.className = "w3-bar-item w3-button w3-hover-grey"
+					link3.className = "w3-bar-item w3-button w3-hover-grey"
+					link4.className = "w3-bar-item w3-button w3-hover-grey"
+		
+	} else if (idx == 2) {
+		img01.src = "images/ilr01.jpg"
+		img02.src = "images/ilr02.jpg"
+		img03.src = "images/ilr03.jpg"
+		img04.src = "images/ilr04.jpg"
+		img05.src = "images/ilr05.jpg"
+		img06.src = "images/ilr06.jpg"
+		img07.src = "images/ilr07.jpg"
+		img08.src = "images/ilr08.jpg"
+		img09.src = "images/ilr09.jpg"
+		// img10.src = "images/ilr10.jpg"
+		// img11.src = "images/ilr11.jpg"
+		// img12.src = "images/ilr12.jpg"
+		link1.className = "w3-bar-item w3-button w3-hover-grey"
+		link2.className = "w3-bar-item w3-black w3-button"
+		link3.className = "w3-bar-item w3-button w3-hover-grey"
+		link4.className = "w3-bar-item w3-button w3-hover-grey"
+	} else if (idx == 3) {
+		img01.src = "images/isr01.jpg"
+			img02.src = "images/isr02.jpg"
+			img03.src = "images/isr03.jpg"
+			img04.src = "images/isr04.jpg"
+			img05.src = "images/isr05.jpg"
+			img06.src = "images/isr06.jpg"
+			img07.src = "images/isr07.jpg"
+			img08.src = "images/isr08.jpg"
+			img09.src = "images/isr09.jpg"
+			// img10.src = "images/isr10.jpg"
+			// img11.src = "images/isr11.jpg"
+			// img12.src = "images/isr12.jpg"		
+				link1.className = "w3-bar-item w3-button w3-hover-grey"
+					link2.className = "w3-bar-item w3-button w3-hover-grey"
+					link3.className = "w3-bar-item w3-black w3-button"
+					link4.className = "w3-bar-item w3-button w3-hover-grey"
+	} else if (idx == 4) {
+		img01.src = "images/oth01.jpg"
+			img02.src = "images/oth02.jpg"
+			img03.src = "images/oth03.jpg"
+			img04.src = "images/oth04.jpg"
+			img05.src = "images/oth05.jpg"
+			img06.src = "images/oth06.jpg"
+			img07.src = "images/fl01.jpg"
+			img08.src = "images/fl02.jpg"
+			img09.src = "images/fl03.jpg"
+			// img10.src = "images/fl04.jpg"
+			// img11.src = "images/fl05.jpg"
+			// img12.src = "images/fl06.jpg"	
+				link1.className = "w3-bar-item w3-button w3-hover-grey"
+					link2.className = "w3-bar-item w3-button w3-hover-grey"
+					link3.className = "w3-bar-item w3-button w3-hover-grey"
+					link4.className = "w3-bar-item w3-black w3-button"
+	}
+		
+	
+}
+
+//Slideshow Apartment Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+
+//Slideshow Apartment Images
+var yslideIndex = 1;
+yshowDivs(yslideIndex);
+
+function yplusDivs(n) {
+  yshowDivs(yslideIndex += n);
+}
+
+function ycurrentDiv(n) {
+  yshowDivs(yslideIndex = n);
+}
+
+function yshowDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("ymySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {yslideIndex = 1}
+  if (n < 1) {yslideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[yslideIndex-1].style.display = "block";
+  dots[yslideIndex-1].className += " w3-opacity-off";
+}
+
+//Slideshow Apartment Images
+var yslideIndex = 1;
+yshowDivs(yslideIndex);
+
+function yplusDivs(n) {
+  yshowDivs(yslideIndex += n);
+}
+
+function ycurrentDiv(n) {
+  yshowDivs(yslideIndex = n);
+}
+
+function yshowDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("ymySlides");
+  var dots = document.getElementsByClassName("demo1");
+  if (n > x.length) {yslideIndex = 1}
+  if (n < 1) {yslideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[yslideIndex-1].style.display = "block";
+  dots[yslideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2b8VTJ0d7EWVZta2ClFZ7V4S792qjHL8&callback=myMap"></script>
+
+
+
+</body>
+</html>
