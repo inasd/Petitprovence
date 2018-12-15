@@ -1,29 +1,41 @@
 <!doctype html>
 <head>
 <style>
-  
-table {
-  background-color: white;
-  border-radius: 8px;
-  width: 300px;
-  height: 500px;
-  }
-  
-tr, td {
-  border: 1px solid black;
-  border-collapse: Collapse;
-  background-color: light-grey;
-  }
 
 body {
   counter-reset: days;
   }
   
-td::after {
+td[class=cm]::after {
   counter-increment: days;
   content: counter(days) "일";
   }
 
+table {
+  background-color: white;
+  border-radius: 8px;
+  width: 500px;
+  height: 300px;
+  }
+  
+tr, td {
+  border: 1px solid black;
+  border-collapse: Collapse;
+  }
+
+/* not current month */
+.ncm {
+  background-color: light-grey;
+  }
+/* current month */
+.cm {
+  background-color: white;
+  }
+
+tr:firsy-child, tr:last-child {
+  background-color: red;
+  }
+  
 </style>
 </head>
 
@@ -42,40 +54,49 @@ td::after {
     <th>토</th>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="cm"></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+  </tr>
+  <tr>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
   </tr>
 </table>
 </body>
