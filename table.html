@@ -9,6 +9,8 @@ body {
 td[class=cm]::after {
   counter-increment: days;
   content: counter(days) "일";
+  font-size: 10px;
+  margin-top: 0;
   }
 
 table {
@@ -19,21 +21,22 @@ table {
   }
   
 tr, td {
-  border: 1px solid black;
-  border-collapse: Collapse;
+  border: none;
+  border-radius: 5px;
   }
 
 /* not current month */
 .ncm {
-  background-color: light-grey;
+  opacity: 0;
   }
 /* current month */
 .cm {
-  background-color: white;
+  background-color: teal;
+  opacity: 0.5;
   }
 
-tr:firsy-child, tr:last-child {
-  background-color: red;
+td:firsy-child, td:last-child {
+  background-color: rga(150,0,0);
   }
   
 </style>
@@ -60,6 +63,15 @@ tr:firsy-child, tr:last-child {
     <td class="ncm"></td>
     <td class="ncm"></td>
     <td class="ncm"></td>
+    <td class="cm"></td>
+  </tr>
+  <tr>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
     <td class="cm"></td>
   </tr>
   <tr>
