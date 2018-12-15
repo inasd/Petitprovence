@@ -6,7 +6,7 @@ body {
   counter-reset: days;
   }
   
-td[class=cm]::after {
+td[class=cm]::before {
   counter-increment: days;
   content: counter(days) "일";
   font-size: 10px;
@@ -35,6 +35,8 @@ tr, td {
 .cm {
   background-color: teal;
   opacity: 0.35;
+  text-align: center;
+  font-size: 15px;
   }
 
 td:first-child, td:last-child {
@@ -99,13 +101,13 @@ th {
     <td class="cm">o</td>
   </tr>
   <tr>
-    <td class="cm"></td>
-    <td class="cm"></td>
-    <td class="cm"></td>
-    <td class="cm"></td>
-    <td class="cm"></td>
-    <td class="cm"></td>
-    <td class="cm"></td>
+    <td class="cm">o</td>
+    <td class="cm">o</td>
+    <td class="cm">o</td>
+    <td class="cm">o</td>
+    <td class="cm">o</td>
+    <td class="cm">o</td>
+    <td class="cm">o</td>
   </tr>
   <tr>
     <td class="cm">o</td>
