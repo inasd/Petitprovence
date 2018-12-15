@@ -1,15 +1,28 @@
 <!doctype html>
 <head>
 <style>
-
-table, tr, td{
+  
+table {
+  background-color: white;
+  border-radius: 8px;
+  }
+  
+tr, td {
   border: 1px solid black;
   border-collapse: Collapse;
   background-color: light-grey;
   width: 300px;
   height: 500px;
-}
+  }
+
+body {
+  counter-reset: days;
+  }
   
+[td]::after {
+  counter-increment: days;
+  content: counter(days);
+  }
 
 </style>
 </head>
@@ -20,40 +33,49 @@ table, tr, td{
 
 <table>
   <tr>
-    <td>
-    <td>
-    <td>
-    <td>
-    <td>
-    <td>
-    <td>
+    <th>일</th>
+    <th>월</th>
+    <th>화</th>
+    <th>수</th>
+    <th>목</th>
+    <th>금</th>
+    <th>토</th>
   </tr>
   <tr>
-    <td>
-    <td>
-    <td>
-    <td>
-    <td>
-    <td>
-    <td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td>
-    <td>
-    <td>
-    <td>
-    <td>
-    <td>
-    <td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td>
-    <td>
-    <td>
-    <td>
-    <td>
-    <td>
-    <td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
 </body>
