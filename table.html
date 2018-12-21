@@ -1,0 +1,131 @@
+<!doctype html>
+<head>
+<style>
+
+body {
+  counter-reset: days;
+  }
+  
+td[class=cm]::before {
+  counter-increment: days;
+  content: counter(days) "일";
+  font-size: 8px;
+  color: white;
+  }
+
+table {
+  background-color: white;
+  border-radius: 8px;
+  max-width: 600px;
+  height: 350px;
+  }
+  
+th, tr, td {
+  border: none;
+  border-radius: 5px;
+  }
+
+td:first-child, td:last-child {
+  background-color: hsl(0, 60%, 71%);
+  }
+
+/* not current month */
+.ncm {
+  background-color: hsl(0, 2%, 85%);
+  }
+/* current month */
+.cm {
+  background-color: hsl(181, 40%, 62%);
+  }
+/* available day */
+p.ad {
+  display: inline-block;
+  border: 2px solid hsl(0,0%,25%);
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  }
+
+th {
+  background-color: hsl(0,0%,80%);
+  color: grey;
+  }
+  
+</style>
+</head>
+
+<body>
+
+<h2 style="text-align:center"><b>12월 예약 가능날짜</b></h2>
+
+<table align="center">
+  <tr>
+    <th>일</th>
+    <th>월</th>
+    <th>화</th>
+    <th>수</th>
+    <th>목</th>
+    <th>금</th>
+    <th>토</th>
+  </tr>
+  <tr>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="cm"></td>
+  </tr>
+  <tr>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+  </tr>
+  <tr>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+    <td class="cm"></td>
+  </tr>
+  <tr>
+    <td class="cm"></td>
+    <td class="cm"><p class="ad"></p></td>
+    <td class="cm"><p class="ad"></p></td>
+    <td class="cm"><p class="ad"></p></td>
+    <td class="cm"><p class="ad"></p></td>
+    <td class="cm"><p class="ad"></p></td>
+    <td class="cm"><p class="ad"></p></td>
+  </tr>
+  <tr>
+    <td class="cm"><p class="ad"></p></td>
+    <td class="cm"><p class="ad"></p></td>
+    <td class="cm"><p class="ad"></p></td>
+    <td class="cm"><p class="ad"></p></td>
+    <td class="cm"><p class="ad"></p></td>
+    <td class="cm"><p class="ad"></p></td>
+    <td class="cm"><p class="ad"></p></td>
+  </tr>
+  <tr>
+    <td class="cm"><p class="ad"></p></td>
+    <td class="cm"><p class="ad"></p></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+    <td class="ncm"></td>
+  </tr>
+</table>
+  <p style="font-size:25px;text-align:center;">O표시가 있는 날이 예약가능한 날입니다.</p>
+  <p style="font-size:10px;text-align:center;">아무 표시가 없는 날은 예약이 불가능합니다.</p>
+</body>

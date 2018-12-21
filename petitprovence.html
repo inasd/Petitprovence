@@ -3,16 +3,17 @@
 <head>
 
 <title>쁘띠프로방스</title>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
 
 body {
-	font-family: "FontAwesome", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1 {font-style: "bold"}
@@ -41,7 +42,7 @@ hr.styleAdd {
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
 	<br> <br>
-	<img src="images/pp01.jpg" style="width:40%" alt="petitprovence"> 
+	<img src="etc/pp01.jpg" style="width:40%" alt="petitprovence"> 
     <h1 class="w3-padding-8 w3-center">쁘띠프로방스</h1>
     <hr class="styleAdd">
     <h6 class="w3-padding-8 w3-center">[곤지암리조트 펜션]</h6>
@@ -51,7 +52,7 @@ hr.styleAdd {
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-padding-15 w3-button fa fa-car">오시는길</a>
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-padding-24 w3-button w3-padding w3-hide-large fa fa-close">닫기</a>
     <br><br>
-    <img src="images/pp02.jpg" style="width:30%" alt="petitprovence"> 
+    <img src="etc/pp02.jpg" style="width:30%" alt="petitprovence"> 
 </nav>
 
 <!-- Top menu on small screens -->
@@ -61,7 +62,7 @@ hr.styleAdd {
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+<div class="w3-content w3-left w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
 </div>
 
 <!-- !PAGE CONTENT! -->
@@ -88,10 +89,10 @@ hr.styleAdd {
     <hr class="styleAdd w3-content" style="max-width:900px">
 
       <!-- This is a main image -->
-      <img src="images/main/main1.png" alt="MainImage" class="w3-image w3-padding-16" style="width:80%;height:45%;">
+      <img src="main/main1.png" alt="MainImage" class="w3-image w3-padding-16" style="width:72%;height:41%;">
 
     <div class="w3-content w3-justify w3-padding-32" style="max-width:900px">
-       <p class="w3-content w3-padding-small w3-left" style="font-size:25px"><strong>펜션소개: </strong></p>
+	    
      <div class="w3-content w3-justify">
         <p class="intro">곤지암 쁘띠프로방스는 주변의 많은 풀들이 정원을 만든듯한 아름다운 전원 풍의 펜션입니다.</p>
     	<p class="intro"><b>곤지암리조트 옆길 도보 3~5분 거리</b>로, 원하실 때 <b>바로 스키</b>를 즐기실 수 있는 가까운 거리입니다.</p>
@@ -109,14 +110,14 @@ hr.styleAdd {
       <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-half w3-margin-bottom">    
 	      <h3>가까운 거리</h3>
-	      <img src="images/main/feature5.jpg" alt="John" style="width:100%">      
+	      <img src="main/feature5.jpg" alt="John" style="width:100%">      
 	      <p class="w3-opacity">서울에서 20Km</p>
 	      <p>서울에서 자가용으로 1시간 이내 거리에 있어 부담없이 하루의 휴식을 즐길 수 있는 곳입니다.</p>
 	      <p><button class="w3-button w3-text-white w3-blue-grey w3-block" onclick="location.href='#contact';">오시는 길</button></p>
 	    </div>
 	    <div class="w3-half w3-margin-bottom">
 	      <h3>쾌적한 환경</h3>
-	      <img src="images/main/main3.jpg" alt="Jane" style="width:100%">     
+	      <img src="main/main3.jpg" alt="Jane" style="width:100%">     
 	      <p class="w3-opacity">자연속의 독채 공간</p>
 	      <p>큰 방과 작은 방, 그리고 큰 테라스에서 바베큐가 가능하며 주변에는 아름다운 꽃이 많습니다.</p>
 	      <p><button class="w3-button w3-text-white w3-blue-grey w3-block" onclick="location.href='#';">쁘띠프로방스</button></p>
@@ -125,14 +126,14 @@ hr.styleAdd {
 	  <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-half w3-margin-bottom">
 	      <h3>아름다운 경치</h3>
-	      <img src="images/main/feature1.jpg" alt="Mike" style="width:100%">     
+	      <img src="main/feature1.jpg" alt="Mike" style="width:100%">     
 	      <p class="w3-opacity">휴양림, 수목원</p>
 	      <p>걸어서 5분, 거리로 1km이내에 화담숲 수목원과 용인자연휴양림이 있어 가족산책이 가능합니다.</p>
 	      <p><button class="w3-button w3-text-white w3-blue-grey w3-block" onclick="location.href='http://www.hwadamsup.com';">화담숲 수목원 가기</button></p>
 	    </div>
 	    <div class="w3-half w3-margin-bottom">
 	      <h3>다양한 관광지</h3>
-	      <img src="images/main/feature4.jpg" alt="Dan" style="width:100%">    
+	      <img src="main/feature4.jpg" alt="Dan" style="width:100%">    
 	      <p class="w3-opacity">스키장(500m), 골프장(1km), 맛집</p>
 	      <p>걸어서 3분 이내 거리에 있는 곤지암 리조트엔 즐길 거리가 많이 있습니다.</p>
 	      <p><button class="w3-button w3-text-white w3-blue-grey w3-block" onclick="location.href='http://www.konjiamresort.co.kr';">곤지암리조트 구경가기</button></p>
@@ -142,44 +143,44 @@ hr.styleAdd {
   	</div>
  
   <!-- Room section -->
-  <div class="w3-container w3-white w3-center w3-text-black w3-padding-64" id="room">
-	<div class="w3-content w3-justify" style="max-width:632px">
+  <div class="w3-content w3-center w3-white w3-center w3-text-black w3-padding-64" id="room" style="max-width:1200px">
+	<div class="w3-content w3-justify" style="max-width:550px">
 	    <h2 class="w3-center w3-padding-large" style="font-size:45px"><b>펜션안내</b></h2>
 	    <hr class="styleAdd w3-content w3-padding-16" style="max-width:900px">
 	    <div class="w3-container" style="margin-top:32px" id="room1">
 		    <h5>외부전경</h5>
 		    <div class="w3-display-container mySlides">
-		      <img src="images/external/external01.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <img src="external/external01.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
 		      <div class="w3-display-bottomleft w3-container w3-black">
 		        <p>입구 전경</p>
 		      </div>
 		    </div>
 		    <div class="w3-display-container mySlides">
-		      <img src="images/external/external02.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <img src="external/external02.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
 		      <div class="w3-display-bottomleft w3-container w3-black">
 		        <p>펜션 정면</p>
 		      </div>
 		    </div>
 		    <div class="w3-display-container mySlides">
-		      <img src="images/external/external03.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <img src="external/external03.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
 		      <div class="w3-display-bottomleft w3-container w3-black">
 		        <p>테라스 입구</p>
 		      </div>
 		    </div>
 		    <div class="w3-display-container mySlides">
-		      <img src="images/external/external04.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <img src="external/external04.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
 		      <div class="w3-display-bottomleft w3-container w3-black">
 		        <p>바베큐 장소</p>
 		      </div>
 		    </div>
 		    <div class="w3-display-container mySlides">
-		      <img src="images/external/external05.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <img src="external/external05.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
 		      <div class="w3-display-bottomleft w3-container w3-black">
 		        <p>스키장 전경</p>
 		      </div>
 		    </div>
 		    <div class="w3-display-container mySlides">
-		      <img src="images/external/external06.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		      <img src="external/external06.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
 		      <div class="w3-display-bottomleft w3-container w3-black">
 		        <p>아름다운 주변경치</p>
 		      </div>
@@ -187,58 +188,58 @@ hr.styleAdd {
 		</div>
 		<div class="w3-row-padding w3-section">
 		    <div class="w3-col s2">
-		      <img class="demo w3-opacity w3-hover-opacity-off" src="images/external/external01.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
+		      <img class="demo w3-opacity w3-hover-opacity-off" src="external/external01.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
 		    </div>
 		    <div class="w3-col s2">
-		      <img class="demo w3-opacity w3-hover-opacity-off" src="images/external/external02.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Dining room">
+		      <img class="demo w3-opacity w3-hover-opacity-off" src="external/external02.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Dining room">
 		    </div>
 		    <div class="w3-col s2">
-		      <img class="demo w3-opacity w3-hover-opacity-off" src="images/external/external03.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Bedroom">
+		      <img class="demo w3-opacity w3-hover-opacity-off" src="external/external03.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Bedroom">
 		    </div>
 		    <div class="w3-col s2">
-		      <img class="demo w3-opacity w3-hover-opacity-off" src="images/external/external04.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Second Living Room">
+		      <img class="demo w3-opacity w3-hover-opacity-off" src="external/external04.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Second Living Room">
 		    </div>
 		    <div class="w3-col s2">
-		      <img class="demo w3-opacity w3-hover-opacity-off" src="images/external/external05.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)" title="Living room">
+		      <img class="demo w3-opacity w3-hover-opacity-off" src="external/external05.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)" title="Living room">
 		    </div>
 		    <div class="w3-col s2">
-		      <img class="demo w3-opacity w3-hover-opacity-off" src="images/external/external06.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)" title="Dining room">
+		      <img class="demo w3-opacity w3-hover-opacity-off" src="external/external06.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)" title="Dining room">
 		    </div> 
 		  </div>
 		<div class="w3-container" id="room2">
 		    <h5>객실안내</h5>
 		    <div class="w3-display-container ymySlides">
-		    <img src="images/internal/internal01.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		    <img src="internal/internal01.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
 		      <div class="w3-display-bottomleft w3-container w3-black">
 		        <p>본채 입구</p>
 		      </div>
 		    </div>
 		    <div class="w3-display-container ymySlides">
-		    <img src="images/internal/internal02.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		    <img src="internal/internal02.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
 		      <div class="w3-display-bottomleft w3-container w3-black">
 		        <p>외부 경치</p>
 		      </div>
 		    </div>
 		    <div class="w3-display-container ymySlides">
-		    <img src="images/internal/internal03.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		    <img src="internal/internal03.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
 		      <div class="w3-display-bottomleft w3-container w3-black">
 		        <p>본채 내부</p>
 		      </div>
 		    </div>
 		    <div class="w3-display-container ymySlides">
-		    <img src="images/internal/internal04.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		    <img src="internal/internal04.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
 		      <div class="w3-display-bottomleft w3-container w3-black">
 		        <p>별채 입구</p>
 		      </div>
 		    </div>
 		    <div class="w3-display-container ymySlides">
-		    <img src="images/internal/internal05.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		    <img src="internal/internal05.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
 		      <div class="w3-display-bottomleft w3-container w3-black">
 		        <p>별채 내부</p>
 		      </div>
 		    </div>
 		    <div class="w3-display-container ymySlides">
-		    <img src="images/internal/internal06.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
+		    <img src="internal/internal06.jpg" style="width:100%;margin-bottom:-6px" onclick="onClick(this)">
 		      <div class="w3-display-bottomleft w3-container w3-black">
 		        <p>내부 장식</p>
 		      </div>
@@ -246,22 +247,22 @@ hr.styleAdd {
 		  </div>
 		<div class="w3-row-padding w3-section" style="margin-bottom:32px">
 	    <div class="w3-col s2">
-	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="images/internal/internal01.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(1)" title="Living room">
+	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="internal/internal01.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(1)" title="Living room">
 	    </div>
 	    <div class="w3-col s2">
-	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="images/internal/internal02.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(2)" title="Dining room">
+	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="internal/internal02.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(2)" title="Dining room">
 	    </div>
 	    <div class="w3-col s2">
-	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="images/internal/internal03.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(3)" title="Bedroom">
+	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="internal/internal03.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(3)" title="Bedroom">
 	    </div>
 	    <div class="w3-col s2">
-	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="images/internal/internal04.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(4)" title="Second Living Room">
+	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="internal/internal04.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(4)" title="Second Living Room">
 	    </div>
 	    <div class="w3-col s2">
-	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="images/internal/internal05.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(5)" title="Second Living Room">
+	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="internal/internal05.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(5)" title="Second Living Room">
 	    </div>
 	    <div class="w3-col s2">
-	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="images/internal/internal06.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(6)" title="Second Living Room">
+	      <img class="demo1 w3-opacity w3-hover-opacity-off" src="internal/internal06.jpg" style="width:100%;cursor:pointer" onclick="ycurrentDiv(6)" title="Second Living Room">
 	    </div>
 	  </div>
     </div>
@@ -326,8 +327,8 @@ hr.styleAdd {
   </div>
   
   <!-- Contact section -->
-  <div class="w3-container w3-light-grey w3-padding-64 w3-padding-large" id="contact">
-    <div class="w3-content" style="max-width:600px">
+  <div class="w3-content w3-center w3-light-grey w3-padding-64 w3-padding-large" id="contact" style="max-width:1200px">
+    <div class="w3-content" style="max-width:550px">
       <h4 class="w3-content w3-round w3-center w3-grey w3-text-white" style="font-size:30px; width:200px; height:50px;"><b>오시는 길</b></h4>
       <div class="w3-row-padding" style="margin-top:32px">
 	    <div class="w3-full">
@@ -353,7 +354,7 @@ hr.styleAdd {
     </div>
   </div>
   
-  <div class="w3-dark-grey w3-center w3-padding-24">
+  <div class="w3-dark-grey w3-center w3-padding-24" style="max-width:1200px">
     Powered by <a href="http://www.prefity.com/petitprovence" title="W3.CSS" target="_blank" class="w3-hover-opacity">Petit Provence</a>
   </div>
   
